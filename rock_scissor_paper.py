@@ -1,6 +1,6 @@
 from random import randint
 print("Your Turn")
-print("choose:\n r for ROCK\n p for PAPER\n s for SCISSOR")
+print("choose:\n r for ROCK    [0]\n p for PAPER   [--]\n s for SCISSOR [8<]")
 u = input()
 a = randint(1,3)
 if a == 1:
@@ -30,4 +30,3 @@ elif u=='s':
         print(" You chosen SCISSOR \n Computer chosen PAPER \n You Win")
     elif c=='r':
         print(" You chosen SCISSOR \n Computer chosen ROCK \n You Lose")
-
