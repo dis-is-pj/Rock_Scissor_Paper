@@ -1,15 +1,11 @@
-from random import randint
+import random
 def f():
     print("Your Turn")
     print("choose:\n r for ROCK    [0]\n p for PAPER   [--]\n s for SCISSOR [8<]")
     u = input()
-    a = randint(1,3)
-    if a == 1:
-        c = 'r'
-    elif a==2:
-        c = 'p'
-    else:
-        c = 's'
+    a = ['r','p','s']
+    c = random.choice(a)
+    
     if u=='r':
         if c=='r':
             print(" You both chosen ROCK \n Its a DRAW")
